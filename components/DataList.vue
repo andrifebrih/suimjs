@@ -27,6 +27,7 @@
         :hide-sort="gridHideSort"
         :hide-delete-button="gridHideDelete"
         :hide-refresh-button="gridHideRefresh"
+        :hide-detail="gridHideDetail"
         :hide-new-button="gridHideNew"
         :sort-field="gridSortField"
         :sort-direction="gridSortDirection"
@@ -79,6 +80,7 @@
         :hide-control="gridHideControl"
         :hide-detail="gridHideDetail"
         :hide-sort="gridHideSort"
+        :hide-edit-button="gridHideEdit"
         :hide-delete-button="gridHideDelete"
         :label-method="gridLabelMethod"
         :hide-refresh-button="gridHideRefresh"
@@ -312,6 +314,7 @@ const props = defineProps({
   gridHideSort: { type: Boolean },
   gridHideNew: { type: Boolean, default: false },
   gridHideRefresh: { type: Boolean, default: false },
+  gridHideEdit: { type: Boolean, default: false },
   gridHideDelete: { type: Boolean, default: false },
   gridSortField: {type: String, default:""},
   gridSortDirection: {type: String, default:""},
